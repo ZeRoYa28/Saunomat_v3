@@ -1,0 +1,40 @@
+/* Infoseite */
+
+ #header2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vw;
+        font-size: 1w;
+        background-color: #BC986A;
+        position: sticky;
+        top: 0vw;
+}
+
+ #nav2 {
+   display: flex;
+   transform: translateX();
+}
+.nav-link2 {
+    padding: 0.5vw 2vw;
+    font-size: 3vw;
+    color: #FBEEC1;
+    text-decoration: none;
+
+}
+
+.nav-link2:hover{
+   color: #DDAD86;
+}
+
+
+ #Saunomat{
+
+    color: #FBEEC1;
+ }
+
+ #untertitel{
+
+    color: #FBEEC1;
+ }
+

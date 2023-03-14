@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS\style_allgemein.css">
+    <link rel="stylesheet" type="text/css" href="CSS\style_infosite.css">
+    <link rel="stylesheet" type="text/css" href="CSS\style_login.css">
+    <link rel="stylesheet" type="text/css" href="CSS\style_mainsite.css">
+    <link rel="stylesheet" type="text/css" href="CSS\style_register.css">
+    <link rel="stylesheet" type="text/css" href="CSS\style_bestellung.css">
+    <link rel="stylesheet" type="text/css" href="CSS\style_uns.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<center>
+		<h1 id="Saunomat">Der Saunomat <span id="dünn">3001</span></h1>
+	</center>
+
+<header id="header2">
+			<nav id= "nav2">
+				<a class="nav-link2" href="index_main.html"> Start </a>
+				<a class="nav-link2" href="index_infos.html" > Infos </a>
+				<a class="nav-link2" href="index_bestellen.html"> Bestellen </a>
+				<a class="nav-link2" id="uns_nav" href="index_anleitung.html"> Anleitung </a>
+			</nav>
+
+<!-- Login Button + PopUp -->	
+	<a id="link01" href="index_registrierung.html"><button id="registrieren2"> Registrieren </button></a>
+	<button id="login2" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+	<div id="id01" class="modal">
+  
+  		<form class="modal-content animate" action="/action_page.php">
+    		<div class="imgcontainer">
+      			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    		</div>
+
+    		<div class="container">
+      			<input type="text" placeholder="E-Mail eingeben" name="uname" required>
+      			<label for="uname"><b>E-Mail</b></label>
+      
+      			<br>
+      
+      			<input type="password" placeholder="Passwort eingeben" name="psw" required>
+      			<label for="psw"><b>Passwort</b></label>
+        
+      			<button type="submit">Login</button>
+      			<label>
+        			<input type="checkbox" checked="checked" name="remember"> Remember me
+      			</label>
+    		</div>
+
+    		<div class="container">
+      			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Abbrechen</button>
+      			<span class="psw"><a class="link" href="#">Passwort Vergessen?</a></span>
+      			<span class="register"> Noch kein Mitglied? <a class="link" href="index_registrierung.html">Registrieren</a></span>
+    		</div>
+  		</form>
+	</div>
+</header>
+<section class="about">	
+	<div id="main_about">
+		<img src="Bilder\roman.jpeg" id="roman">
+		<div id="about_text">
+			<h3 id="Aufgabe"> Web Developer & CEO </h3>
+			<p id="über_uns"> Ich heiße Roman. Ich bin sehr interessiert in Physik, Mathematik und Informatik. Ich behersche die Programiersprachen HTML, CSS, JavaScript und Java. Meine Hobbies sind Klavier spielen, Skaten und spazieren gehen.</p>
+		</div>
+	</div>
+	<div id="main_about">
+		<img src="Bilder\micha.jpeg" id="roman">
+		<div id="about_text">
+			<h3 id="Aufgabe"> Sauna Developer & CTO </h3>
+			<p id="über_uns"> Ich heiße Micha. sahdjkashdjkha</p>
+		</div>
+	</div>
+	<div id="main_about">
+		<img src="Bilder\marcel.jpeg" id="roman">
+		<div id="about_text">
+			<h3 id="Aufgabe"> Database Developer </h3>
+			<p id="über_uns"> Ich heiße Marcel. Ich bin sehr interessiert in Fremdsprachen, Mathe und Info. Ich beherrsche die Programmiersprache HTML, CSS und ich kann Datenbanken in MySQL erstellen. Meine Hobbys sind E-Sports und Volleyball.</p>
+		</div>
+	</div>
+	<div id="main_about">
+		<img src="Bilder\fredi.jpeg" id="roman">
+		<div id="about_text">
+			<h3 id="Aufgabe"> Web Designer </h3>
+			<p id="über_uns"> Moin ich bin Fred. Meine Kompetenzen habe ich im Design der Website ausgeübt. Neben der Informatik befasse ich mich ebenfalls gern mit der Mathematik. Außerdem Supporte ich Berlins Fußballclub Nummer 1, Hertha BSC.</p>
+		</div>
+	</div>
+	<div id="main_about">
+		<img src="Bilder\arne.jpeg" id="roman">
+		<div id="about_text">
+			<h3 id="Aufgabe"> Sauna Designer </h3>
+			<p id="über_uns"> Ich heiße Arne. Ich bin sehr interessiert an Informatik und Sport. Ich beherrsche die Programmiersprachen HTML, CSS und z.T. JavaScript. Meine Hobbies sind Kraftsport, Zocken und Motorsport vorallem die Formel 1 und DTM.</p>
+		</div>
+	</div>
+</section>
+</body>
+</html>

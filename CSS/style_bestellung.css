@@ -1,0 +1,83 @@
+#bestellen_nav{
+  margin-right: 5.2vw;
+}
+
+ #sauna, #bestellen_text, #sparen{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 5vh;
+ }
+ #hütte{
+   height: 80%;
+   width: 80%;
+ }
+
+ #countdown{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ #kaufen{
+    border: 2px solid red;
+    animation: myBorderAnimation, myColorAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    margin-right: 2vw;
+    font-size: 2.5vw;
+    padding: 0.5vw 1vw;
+    
+ }
+
+ #kaufen:hover{
+  animation: myBorderAnimation, myBackgroundAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  color: #5CDB95;
+
+ }
+
+
+ #countdown, #sparen{
+
+    color: red;
+    animation: myColorAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+ }
+
+ @keyframes myColorAnimation{
+
+    0%{color: red;}
+    20%{color: orange;}
+    40%{color: yellow}
+    60%{color: green}
+    80%{color:blue}
+    100%{color: purple;}
+
+
+ }
+
+ @keyframes myBorderAnimation{
+
+    0%{border-color: red;}
+    20%{border-color: orange;}
+    40%{border-color: yellow}
+    60%{border-color: green}
+    80%{border-color:blue}
+    100%{border-color: purple;}
+
+
+ }
+
+ @keyframes myBackgroundAnimation{
+
+    0%{background-color: red;}
+    20%{background-color: orange;}
+    40%{background-color: yellow}
+    60%{background-color: green}
+    80%{background-color:blue}
+    100%{background-color: purple;}
+ }

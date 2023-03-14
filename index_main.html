@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS\style_allgemein.css">
+  <link rel="stylesheet" type="text/css" href="CSS\style_infosite.css">
+  <link rel="stylesheet" type="text/css" href="CSS\style_login.css">
+  <link rel="stylesheet" type="text/css" href="CSS\style_mainsite.css">
+  <link rel="stylesheet" type="text/css" href="CSS\style_register.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Saunomat 3001 Startseite</title>
+</head>
+<body id="main_body">
+
+	 <header id="header">
+      <!--<h1 class="title">Saunomat <span id="dünn"> 3001</span></h1> -->
+      <img id="logo" src="Bilder\Logo.png">
+      <nav id="nav">
+        <a class="nav-link" href="index_infos.html"> Infos</a>
+        <a class="nav-link" href="index_bestellen.html">Bestellen</a>
+        <a class="nav-link" href="index_anleitung.html">Anleitung</a>
+        <a class="nav-link" href="index_uns.html"> Über Uns </a>
+      </nav>
+      <a id="link01" href="index_registrierung.html"><button id="registrieren_main"> Registrieren </button></a>
+      <button id="login_main" onclick="document.getElementById('id01').style.display='block'">Login</button>
+    </header>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <input type="text" placeholder="E-Mail eingeben" name="uname" required>
+      <label for="uname"><b>E-Mail</b></label>
+      
+      <br>
+      
+      <input type="password" placeholder="Passwort eingeben" name="psw" required>
+      <label for="psw"><b>Passwort</b></label>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Abbrechen</button>
+      <span class="psw"><a class="link" href="#">Passwort Vergessen?</a></span>
+      <span class="register"> Noch kein Mitglied? <a class="link" href="index_registrierung.html">Registrieren</a></span>
+    </div>
+  </form>
+</div>
+<h1 id="limitiert"> Limitierte Sonderaktion! Jetzt bestellen!</h1>
+</body>
+</html>

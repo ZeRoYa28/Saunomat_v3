@@ -1,0 +1,150 @@
+/* Login Buttons */
+ #login_main{
+    margin-right: 2vw;
+    font-size: 2vw;
+    padding: 0.5vw 1vw;
+    border: 2px solid #FBEEC1;
+    color: #FBEEC1;
+    background-color: #659DBD;
+    transform: translateX(2vw);
+}  
+
+#login_main:hover{
+
+  color: #659DBD;
+  background-color: #FBEEC1;
+} 
+
+ 
+
+ #login2{
+    margin-right: 2vw;
+    font-size: 2.5vw;
+    padding: 0.5vw 1vw;
+    border: 2px solid #FBEEC1;
+    color: #FBEEC1;
+    background-color: #BC986A;
+    transform: translateX(2vw);
+} 
+
+#login2:hover{
+  color: #BC986A;
+  background-color: #FBEEC1;
+}
+
+#login2:active{
+  
+  background-color: #DAAD86;
+  border-color: #DAAD86;
+}
+
+#login_main:active{
+
+  background-color: #DAAD86;
+  border-color: #DAAD86;
+}
+
+
+
+/* Login Fenster */
+
+ /* Modal */
+.modal {
+  display: none; 
+  position: absolute; 
+  z-index: 3; 
+  padding-top: 20vh;
+  left: 0;
+  top: 0;
+  width: 100vw; 
+  height: 100vh; 
+  overflow: auto; 
+  background-color: transparent;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #659DBD;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #FBEEC1;
+  width: 80vw;
+}
+
+/* Close Button */
+.close {
+  position: relative;
+  left: 77.5vw;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+/* Container */
+.container {
+  padding: 1vh;
+  background-color: #659DBD;
+}
+
+/* Login Button */
+button[type=submit] {
+  background-color: #659DBD;
+  color: #FBEEC1;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 3px solid #FBEEC1;
+  cursor: pointer;
+  width: 100%;
+}
+
+button[type=submit]:hover{
+  color: #659DBD;
+  background-color: #FBEEC1;
+}
+
+button[type=submit]:active{
+
+  background-color: #DAAD86;
+  border-color: #DAAD86;
+}
+
+/* Cancel Button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Checkbox */
+input[type=checkbox] {
+  margin-bottom: 15px;
+}
+
+/* Password */
+.psw {
+  float: right;
+  padding-top: 1vh;
+}
+
+.register{
+    padding:5vw;
+}
+
+
+/* Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform}

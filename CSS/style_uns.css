@@ -1,0 +1,31 @@
+#uns_nav{
+
+	margin-right: 5.5vw;
+}
+
+#roman{
+	height: 30%;
+	width: 30%;
+	margin-top: 5vh;
+}
+
+.about{
+	width: 100%;
+}
+#über_uns{
+	margin-right: 45vw;
+	text-align: unset;
+}
+
+#Aufgabe{
+
+	margin-top: 5vh;
+	color: #FBEEC1;
+
+}
+
+#main_about{
+	
+	display: flex;
+	justify-content: space-around;
+}

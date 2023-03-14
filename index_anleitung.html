@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS\style_allgemein.css">
+  	<link rel="stylesheet" type="text/css" href="CSS\style_infosite.css">
+  	<link rel="stylesheet" type="text/css" href="CSS\style_login.css">
+  	<link rel="stylesheet" type="text/css" href="CSS\style_mainsite.css">
+  	<link rel="stylesheet" type="text/css" href="CSS\style_register.css">
+  	<link rel="stylesheet" type="text/css" href="CSS\style_anleitung.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Anleitung zum Saunomat 3001</title>
+</head>
+<body>
+	<center>
+		<h1 id="Saunomat">Der Saunomat <span id="dünn">3001</span></h1>
+	</center>
+
+<header id="header2">
+			<nav id= "nav2">
+				<a class="nav-link2" href="index_main.html"> Start </a>
+				<a class="nav-link2" href="index_infos.html" > Infos </a>
+				<a class="nav-link2" href="index_bestellen.html"> Bestellen </a>
+				<a class="nav-link2" id="anleitung_nav" href="index_uns.html"> Über Uns </a>
+			</nav>
+
+<!-- Login Button + PopUp -->	
+	<a id="link01" href="index_registrierung.html"><button id="registrieren2"> Registrieren </button></a>
+	<button id="login2" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+	<div id="id01" class="modal">
+  
+  		<form class="modal-content animate" action="/action_page.php">
+    		<div class="imgcontainer">
+      			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    		</div>
+
+    		<div class="container">
+      			<input type="text" placeholder="E-Mail eingeben" name="uname" required>
+      			<label for="uname"><b>E-Mail</b></label>
+      
+      			<br>
+      
+      			<input type="password" placeholder="Passwort eingeben" name="psw" required>
+      			<label for="psw"><b>Passwort</b></label>
+        
+      			<button type="submit">Login</button>
+      			<label>
+        			<input type="checkbox" checked="checked" name="remember"> Remember me
+      			</label>
+    		</div>
+
+    		<div class="container">
+      			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Abbrechen</button>
+      			<span class="psw"><a class="link" href="#">Passwort Vergessen?</a></span>
+      			<span class="register"> Noch kein Mitglied? <a class="link" href="index_registrierung.html">Registrieren</a></span>
+    		</div>
+  		</form>
+	</div>
+</header>
+	<h2 id="subtitel"> Was sie benötigen: </h2>
+		<ul id="benötigen">
+			<li>Programmierfähiger Computer oder Laptop (<span id="rot">Nicht im Lieferumgfang</span>)</li>
+			<li>ESP 8266 (<span id="grün">Im Lieferumfang</span>)</li>
+			<li>BreadBoard (<span id="grün">Im Lieferumfang</span>)</li>
+			<li>DHT 11 Temperatursensor (<span id="grün">Im Lieferumfang</span>)</li>
+			<li>MQ-2 Gas Sensor (<span id="grün">Im Lieferumfang</span>)</li>
+			<li>TIP 120 Transistor (<span id="grün">Im Lieferumfang</span>)</li>
+			<li> Wiederstand (330Ω) (<span id="grün">Im Lieferumfang</span>)</li>
+			<li>Heizung/Lüfter (<span id="grün">Im Lieferumfang</span>)</li>
+			<li>Steckbrückenkabel (<span id="grün">Im Lieferumfang</span>)</li> 
+			<li>USB A auf micro USB Kabel (<span id="grün">Im Lieferumfang</span>)</li>
+		</ul>
+
+	<h2 id="subtitel">Was muss im Vorhinein gemacht werden?</h2>
+		<p> Bevor Sie anfangen sollten Sie sichergehen, dass Sie die aktuellste Version der Arduino IDE installiert haben. Diese können Sie ganz einfach <a href="https://www.arduino.cc/en/software" target="_blank"> hier</a> herunterladen. Nachdem Sie dies sichergestellt haben, müssen Sie noch einige Vorkehrungen im Programm treffen. <br><br>Gehen Sie zunächst einmal auf <b>»File« -> »Prefrences« </b>  <br><img id="IDE" src="Bilder\Pref.webp"><br> Geben Sie nun http://arduino.esp8266.com/stable/package_esp8266com_index.json in das Feld Additional Boards Manager URLs ein und drücken Sie anschließend auf "OK" <img id="IDE" src="Bilder\URL.webp"> <br> Öffnen Sie anschließend den Boards Manager. Dazu müssen sie auf <b>»Tools -> »Board« -> »Boards« »Manager«</b> <br> <img src="Bilder\Boards.webp"> <br> Suchen Sie nun nach "ESP8266" und drücken Sie auf "Install" <img src="Bilder\install.webp"> <br> Nach wenigen Sekunden sollten Sie Startklar sein.
+
+	<h2 id="subtitel">Der Aufbau des Saunomats</h2>
+		<p> Nehmen Sie die Bestandteile aus der Verpakung und ordnen Sie diese nach folgendem Schaltplan an: <img src="Bilder\schaltplan.jpeg"> Verbinden Sie anschließend den ESP8266 via USB Kabel mit Ihrem Computer und starten Sie die Arduino IDE. Nun müssen Sie nurnoch den Code draufladen. Diesen downloaden Sie ganz einfach <a href="Virus.exe" download> hier </a>
+</body>
+</html>

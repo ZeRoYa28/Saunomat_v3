@@ -1,0 +1,53 @@
+ /* Allgemein */
+
+ body{
+   background-color: #659DBD;
+    font-size:2vw;
+    font-family: cursive;
+ }
+
+ button{
+   background-color: #659DBD;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+    font-family: cursive;
+    font-size: 100%;
+}
+ 
+
+ p{
+    color:#EDF5E1;
+    text-align: justify;
+    margin: 10px;
+    font-family: cursive;
+ }
+
+ .link{
+    text-decoration: none;
+    color: #FA0038;
+}
+
+ #regenbogen{
+
+    color: red;
+    animation: myColorAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+ }
+
+ @keyframes myColorAnimation{
+
+    0%{color: red;}
+    20%{color: orange;}
+    40%{color: yellow}
+    60%{color: green}
+    80%{color:blue}
+    100%{color: purple;}
+
+
+ }
